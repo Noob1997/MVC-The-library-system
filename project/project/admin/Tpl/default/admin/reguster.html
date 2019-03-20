@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+	<title>图书租借系统</title>
+
+	<!-- Meta-Tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //Meta-Tags -->
+
+	<!-- Style --> <link rel="stylesheet" href="__ROOT__/admin/Common/css/style.css" type="text/css" media="all">
+
+
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+
+	<h1>图书租借系统</h1>
+
+	<div class="container w3layouts agileits">
+
+
+		
+			<h2>注册</h2>
+			<form action="__APP__/user/reguster_add" method="post">
+				<input type="text" Name="name" placeholder="用户名" required="">
+				<input type="password" Name="password" placeholder="密码" required="">
+				<input type="password" Name="passwordc" placeholder="确认密码" required="">
+			<div class="send-button w3layouts agileits">
+				<form>
+					<input type="submit" name="submit" value="注册">
+					<input type="button" value="返回登录" onclick="reg('__APP__')"/>
+					<script type="application/x-javascript">
+						function reg(str){
+							var url=str+"/admin/login";
+							window.location.href=url;
+						}
+					</script>
+				</form>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div class="footer w3layouts agileits">
+	</div>
+
+</body>
+<!-- //Body -->
+
+</html>
